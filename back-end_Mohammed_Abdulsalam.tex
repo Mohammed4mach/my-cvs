@@ -35,6 +35,8 @@
 \usepackage[normalem]{ulem} % provides "\ul" (uline) command which will break at line breaks
 
 \usepackage[english]{babel} % provides culturally determined typographical rules for wide range of languages
+
+\usepackage{import} % Import other from other *.tex files
 %-----------------------------------------
 
 \input glyphtounicode % converts glyph names to unicode
@@ -161,25 +163,16 @@
 %-----------CONTACT DETAILS------------------
 % Make sure all the details are correct, you can add more links in the first row of second column if needed
 
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Huge Mohammed Abdulsalam \vspace{2pt}} & % row = 1, col = 1
-  Location: Alexandria, Egypt \\ % row = 1, col = 2
-  % \href{https://jane-doe.com}{\uline{jane-doe.com}} $|$ % row = 2, col = 1
-  \href{https://linkedin.com/in/mohamed-abdullsalam-a297401b6}{\uline{LinkedIn}} $|$ % row = 2, col = 1
-  \href{https://github.com/Mohammed4mach}{\uline{GitHub}} $|$ % row = 2, col = 1
-  \href{https://codeforces.com/profile/Moha-mach}{\uline{Codeforces}} & % row = 2, col = 1
-  Email: \href{mailto:moha4mach@gmail.com}{\uline{moha4mach@gmail.com}} $|$ % row = 2, col = 2
-  Mobile: +20 12 1165 0982 \\ % row = 2, col = 2
-\end{tabular*}
+\import{includes/}{contact-details}
 %--------------------------------------------
 
 
 %-----------SUMMARY--------------------------
 % Keep this short, simple and straigth to point
 
-\section{Front End Developer}
+\section{Back End Developer}
 \small{
-  I am a highly skilled web developer with over \textbf{2 year of experience} in \textbf{HTML, CSS, JavaScript}. I have knowledge of popular frameworks such as \textbf{React, and Vue.js} and experience with REST APIs.
+    I am a highly skilled back-end devleoper with over \textbf{1 year of experience} in \textbf{PHP, MySQL}. I have knowledge of popular frameworks such as \textbf{Laravel}. I worked on several projects using native \textbf{PHP} and \textbf{MySQL/MariaDB}, and have experience designing REST APIs.
 }
 %--------------------------------------------
 
@@ -189,11 +182,12 @@
 
 \section{Technical Skills}
   \resumeHeadingListStart{}
-    \resumeSectionType{Languages}{:}{Javascript, HTML, CSS}
-    \resumeSectionType{Frameworks}{:}{React.js}
-    \resumeSectionType{Libraries}{:}{React Router, Styled Components, Socket.IO}
-    \resumeSectionType{Databases}{:}{MongoDB, PostgreSQL}
-    \resumeSectionType{Dev Tools}{:}{Visual Studio Code, Git, Gitlab}
+    \resumeSectionType{Languages}{:}{PHP, SQL, Javascript, TeX}
+    \resumeSectionType{Frameworks}{:}{Laravel}
+    \resumeSectionType{Libraries}{:}{PHPUnit, PHP Spread Sheet, ECDSA}
+    \resumeSectionType{Databases}{:}{MySQL, MariaDB, SQLlite}
+    \import{includes/technical-skills/}{concepts}
+    \import{includes/technical-skills/}{tools}
   \resumeHeadingListEnd{}
 %--------------------------------------------
 
@@ -203,25 +197,9 @@
 
 \section{Experience}
 \resumeHeadingListStart{}
-  \resumeQuadHeading{Web Developer}{Apr 2022 -- Present}
-  {Anycompany}{Remote -- AnyCity, Anystate, Anycountry}
-    \resumeItemListStart{}
-      \resumeItem{Designed and developed dynamic and responsive websites using \textbf{HTML, CSS, JavaScript, and PHP}}
-      \resumeItem{Worked with \textbf{REST APIs} to retrieve and display data from databases}
-      \resumeItem{Improved \textbf{website performance} and speed through optimization techniques by \textbf{55\%}}
-    \resumeItemListEnd{}
+  \import{includes/experience}{backend-freelance}
 
-  \resumeQuadHeading{Backend Developer}{Aug 2021 -- Nov 2022}
-  {Anycompany}{Anycity, Anystate, Anycountry}
-    \resumeItemListStart{}
-      \resumeItem{Worked with \textbf{MVC frameworks} to develop robust and scalable backends}
-      \resumeItem{Troubleshot and \textbf{fixed bugs} and issues in the backend to ensure \textbf{smooth operation} of the applications}
-    \resumeItemListEnd{}
-
-  \resumeQuadHeadingChild{Backend Developer Intern}{Jan 2021 -- Aug 2021}
-    \resumeItemListStart{}
-      \resumeItem{Assisted senior web developers in the design and development of websites using \textbf{HTML, CSS, and JavaScript}}
-    \resumeItemListEnd{}
+  \import{includes/experience}{vice-head-GDSC}
 \resumeHeadingListEnd{}
 %---------------------------------------------
 
@@ -231,8 +209,7 @@
 
 \section{Education}
   \resumeHeadingListStart{}
-    \resumeQuadHeading{University of Anystate}{Anycity, Anystate, Anycountry}
-    {Bachelor of Science in Computer Science}{Jan 2016 -- Dec 2020}
+    \import{includes/education/}{BSc-computer-science}
   \resumeHeadingListEnd{}
 %---------------------------------------------
 
@@ -242,32 +219,11 @@
 
 \section{Projects}
   \resumeHeadingListStart{}
-    \resumeTrioHeading{\href{https://project1.com}{\uline{Project 1}}}{React.js, Redux, PHP, MySQL Git}{\href{https://proect1.com/source-code/}{\uline{Source Code}}}
-      \resumeItemListStart{}
-        \resumeItem{Designed and developed a clean and modern website using \textbf{HTML, CSS, and JavaScript}}
-        \resumeItem{Optimized website for \textbf{speed and user experience}}
-        \resumeItem{Utilized \textbf{responsive design} to ensure compatibility across all devices}
-        \resumeItem{Deployed on GitHub pages via GitHub Actions}
-      \resumeItemListEnd{}
-
-      \resumeTrioHeading{Project 2}{Node.js, Express, JavaScript, Git}{\href{https:project2.com/source-code}{\uline{Source Code}}}
-      \resumeItemListStart{}
-        \resumeItem{A \textbf{CRUD application} exposed using a RESTful API made with Node.js}
-        \resumeItem{Exposed POST, GET, PATCH and DELETE HTTP methods using \textbf{Express}}
-      \resumeItemListEnd{}
+    \import{includes/projects/}{bookopia}
+    \import{includes/projects/}{salem-clinic-website}
+    \import{includes/projects/}{simple-api-framework}
+    \import{includes/projects/}{clinic-management-system}
   \resumeHeadingListEnd{}
-%--------------------------------------------
-
-
-%----------------OTHERS----------------------
-% You can add your acheivements, accolades, certifications etc. here.
-
-\section{Certifications}
-  \resumeItemListStart{}
-    \resumeItem{\href{https://dummy-certification.com}{\uline{Certified Web Developer by the W3C}}}
-    \resumeItem{\href{https://dummy-certification.com}{\uline{Microsoft Certified: Azure Developer Associate}}}
-    \resumeItem{\href{https://dummy-certification.com}{\uline{AWS Certified Developer - Associate}}}
-  \resumeItemListEnd{}
 %--------------------------------------------
 
 \end{document}

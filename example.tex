@@ -35,6 +35,8 @@
 \usepackage[normalem]{ulem} % provides "\ul" (uline) command which will break at line breaks
 
 \usepackage[english]{babel} % provides culturally determined typographical rules for wide range of languages
+
+\usepackage{import} % Import other from other *.tex files
 %-----------------------------------------
 
 \input glyphtounicode % converts glyph names to unicode
@@ -177,9 +179,9 @@
 %-----------SUMMARY--------------------------
 % Keep this short, simple and straigth to point
 
-\section{Back End Developer}
+\section{Front End Developer}
 \small{
-    I am a highly skilled back-end devleoper with over \textbf{1 year of experience} in \textbf{PHP, MySQL}. I worked on several projects using native \textbf{PHP} and \textbf{MySQL/MariaDB}, and have experience designing REST APIs.
+  I am a highly skilled web developer with over \textbf{2 year of experience} in \textbf{HTML, CSS, JavaScript}. I have knowledge of popular frameworks such as \textbf{React, and Vue.js} and experience with REST APIs.
 }
 %--------------------------------------------
 
@@ -189,11 +191,11 @@
 
 \section{Technical Skills}
   \resumeHeadingListStart{}
-    \resumeSectionType{Languages}{:}{PHP, SQL, Javascript, TeX}
-    \resumeSectionType{Libraries}{:}{PHPUnit, PHP Spread Sheet, ECDSA}
-    \resumeSectionType{Databases}{:}{MySQL, MariaDB, SQLlite}
-    \resumeSectionType{Concepts}{:}{OOP, Regular Expressions, REST, ERD Design, SRS Design}
-    \resumeSectionType{Dev Tools}{:}{Vim, Visual Studio Code, XDebug, Git, Github, Apache HTTP Server, Linux, cron, Docker, Insomnia}
+    \resumeSectionType{Languages}{:}{Javascript, HTML, CSS}
+    \resumeSectionType{Frameworks}{:}{React.js}
+    \resumeSectionType{Libraries}{:}{React Router, Styled Components, Socket.IO}
+    \resumeSectionType{Databases}{:}{MongoDB, PostgreSQL}
+    \resumeSectionType{Dev Tools}{:}{Visual Studio Code, Git, Gitlab}
   \resumeHeadingListEnd{}
 %--------------------------------------------
 
@@ -203,21 +205,24 @@
 
 \section{Experience}
 \resumeHeadingListStart{}
-  \resumeQuadHeadingChild{Back End Developer}{Feb 2022 -- Present}
-  {Freelance}
+  \resumeQuadHeading{Web Developer}{Apr 2022 -- Present}
+  {Anycompany}{Remote -- AnyCity, Anystate, Anycountry}
     \resumeItemListStart{}
-      \resumeItem{Desing and development of back-ends using \textbf{PHP, MYSQL/MariaDB}}
-      \resumeItem{Worked on REST APIs for medium-sized systems}
-      \resumeItem{Analysis of stakeholders reuirements, and design \textbf{ERD}, \textbf{SRS}, and various documents}
-      \resumeItem{Deployed and maintained websites on \textbf{AWS EC2} linux server}
+      \resumeItem{Designed and developed dynamic and responsive websites using \textbf{HTML, CSS, JavaScript, and PHP}}
+      \resumeItem{Worked with \textbf{REST APIs} to retrieve and display data from databases}
+      \resumeItem{Improved \textbf{website performance} and speed through optimization techniques by \textbf{55\%}}
     \resumeItemListEnd{}
 
-  \resumeQuadHeading{Vice Head of Web Development Committee}{Sep 2022 -- Apr 2023}
-  {GDSC KSU}{Remote -- Kafrelsheikh, Kafrelsheikh, Egypt}
+  \resumeQuadHeading{Backend Developer}{Aug 2021 -- Nov 2022}
+  {Anycompany}{Anycity, Anystate, Anycountry}
     \resumeItemListStart{}
-      \resumeItem{Share knowledge and experience with my fellow members}
-      \resumeItem{Make sure the plan is suitable for members}
-      \resumeItem{Demonstrated critical topics in core \textbf{Front End} technologies, including \textbf{SEO}, and \textbf{Accessibility}, through number of sessions}
+      \resumeItem{Worked with \textbf{MVC frameworks} to develop robust and scalable backends}
+      \resumeItem{Troubleshot and \textbf{fixed bugs} and issues in the backend to ensure \textbf{smooth operation} of the applications}
+    \resumeItemListEnd{}
+
+  \resumeQuadHeadingChild{Backend Developer Intern}{Jan 2021 -- Aug 2021}
+    \resumeItemListStart{}
+      \resumeItem{Assisted senior web developers in the design and development of websites using \textbf{HTML, CSS, and JavaScript}}
     \resumeItemListEnd{}
 \resumeHeadingListEnd{}
 %---------------------------------------------
@@ -228,9 +233,8 @@
 
 \section{Education}
   \resumeHeadingListStart{}
-    \resumeQuadHeading{University of Kafrelsheikh -- Faculty of Computers and Information}{Kafrelsheikh, Kafrelsheikh, Egypt}
-    {Bachelor of Science in Computer Science}{Sep 2020 -- Jul 2024}
-    {GPA: 3.25/4}
+    \resumeQuadHeading{University of Anystate}{Anycity, Anystate, Anycountry}
+    {Bachelor of Science in Computer Science}{Jan 2016 -- Dec 2020}
   \resumeHeadingListEnd{}
 %---------------------------------------------
 
@@ -240,33 +244,32 @@
 
 \section{Projects}
   \resumeHeadingListStart{}
-      \resumeTrioHeading{\href{https://salem-clinic.com}{\uline{Salem Clinic Website}}}{PHP, MySQL, Javascript, Git}{Private}
+    \resumeTrioHeading{\href{https://project1.com}{\uline{Project 1}}}{React.js, Redux, PHP, MySQL Git}{\href{https://proect1.com/source-code/}{\uline{Source Code}}}
       \resumeItemListStart{}
-        \resumeItem{Designed and developed dynamic monolith website using \textbf{PHP, HTML, CSS, and JavaScript}}
-        \resumeItem{Worked on admin panel providing article management, content management, and admins priviliges}
-        \resumeItem{Developed Markup to HTML library using \textbf{PHP, and Javascript}, utilized in articles creation, editing, and viewing}
-        \resumeItem{Deployed using \textbf{Apache} server on \textbf{AWS EC2} instance, with domain name and \textbf{HTTPS} certificate configured}
-        \resumeItem{Used a \textbf{cronjob} to backup data periodically}
-        % \resumeItem{A \textbf{CRUD application} exposed using a RESTful API made with Node.js}
-        % \resumeItem{Exposed POST, GET, PATCH and DELETE HTTP methods using \textbf{Express}}
+        \resumeItem{Designed and developed a clean and modern website using \textbf{HTML, CSS, and JavaScript}}
+        \resumeItem{Optimized website for \textbf{speed and user experience}}
+        \resumeItem{Utilized \textbf{responsive design} to ensure compatibility across all devices}
+        \resumeItem{Deployed on GitHub pages via GitHub Actions}
       \resumeItemListEnd{}
 
-    \resumeTrioHeading{Simple API Framework}{PHP}{\href{https://github.com/Mohammed4mach/simple-api-framework}{\uline{Source Code}}}
+      \resumeTrioHeading{Project 2}{Node.js, Express, JavaScript, Git}{\href{https:project2.com/source-code}{\uline{Source Code}}}
       \resumeItemListStart{}
-        \resumeItem{Developed various utilities to facilitate \textbf{RESTful APIs} developing}
-        \resumeItem{Implemented my own \textbf{Router, and JWT} utilities}
-      \resumeItemListEnd{}
-
-      \resumeTrioHeading{Clinic Management System / ERP System}{PHP, MariaDB, Socket.IO}{Private}
-      \resumeItemListStart{}
-        \resumeItem{A \textbf{CRUD application} exposed using a RESTful API made with PHP}
-        \resumeItem{Analysed stakeholders requirements, deigned \textbf{ERD} based on this analysis}
-        \resumeItem{Used \textbf{XDebug} to facilitate debugging process, and \textbf{PHPUnit} to automate unit testing}
-        \resumeItem{Worked on many features that support bussiness logic, includes live queues, activity log, authorization rules and priviliges, payroll system, patient management system, etc\ldots}
-        \resumeItem{Used \textbf{Socket.IO} under \textbf{Node.js} to build socket server to maintain live queues data between clients}
-        % \resumeItem{Exposed POST, GET, PATCH and DELETE HTTP methods using \textbf{Express}}
+        \resumeItem{A \textbf{CRUD application} exposed using a RESTful API made with Node.js}
+        \resumeItem{Exposed POST, GET, PATCH and DELETE HTTP methods using \textbf{Express}}
       \resumeItemListEnd{}
   \resumeHeadingListEnd{}
+%--------------------------------------------
+
+
+%----------------OTHERS----------------------
+% You can add your acheivements, accolades, certifications etc. here.
+
+\section{Certifications}
+  \resumeItemListStart{}
+    \resumeItem{\href{https://dummy-certification.com}{\uline{Certified Web Developer by the W3C}}}
+    \resumeItem{\href{https://dummy-certification.com}{\uline{Microsoft Certified: Azure Developer Associate}}}
+    \resumeItem{\href{https://dummy-certification.com}{\uline{AWS Certified Developer - Associate}}}
+  \resumeItemListEnd{}
 %--------------------------------------------
 
 \end{document}

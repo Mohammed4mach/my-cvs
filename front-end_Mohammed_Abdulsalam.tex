@@ -35,6 +35,8 @@
 \usepackage[normalem]{ulem} % provides "\ul" (uline) command which will break at line breaks
 
 \usepackage[english]{babel} % provides culturally determined typographical rules for wide range of languages
+
+\usepackage{import} % Import other from other *.tex files
 %-----------------------------------------
 
 \input glyphtounicode % converts glyph names to unicode
@@ -161,25 +163,16 @@
 %-----------CONTACT DETAILS------------------
 % Make sure all the details are correct, you can add more links in the first row of second column if needed
 
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Huge Mohammed Abdulsalam \vspace{2pt}} & % row = 1, col = 1
-  Location: Alexandria, Egypt \\ % row = 1, col = 2
-  % \href{https://jane-doe.com}{\uline{jane-doe.com}} $|$ % row = 2, col = 1
-  \href{https://linkedin.com/in/mohamed-abdullsalam-a297401b6}{\uline{LinkedIn}} $|$ % row = 2, col = 1
-  \href{https://github.com/Mohammed4mach}{\uline{GitHub}} $|$ % row = 2, col = 1
-  \href{https://codeforces.com/profile/Moha-mach}{\uline{Codeforces}} & % row = 2, col = 1
-  Email: \href{mailto:moha4mach@gmail.com}{\uline{moha4mach@gmail.com}} $|$ % row = 2, col = 2
-  Mobile: +20 12 1165 0982 \\ % row = 2, col = 2
-\end{tabular*}
+\import{includes/}{contact-details}
 %--------------------------------------------
 
 
 %-----------SUMMARY--------------------------
 % Keep this short, simple and straigth to point
 
-\section{Full Stack Developer}
+\section{Front End Developer}
 \small{
-  I am a highly skilled web developer with over \textbf{2 year of experience} in \textbf{HTML, CSS, Javascript}, \textbf{1 year of experience} in \textbf{PHP, MySQL}. I have knowledge of popular frameworks such as \textbf{React, and Vue.js}. I worked on several projects using native \textbf{PHP} and \textbf{MySQL/MariaDB}, and have experience designing REST APIs.
+  I am a highly skilled web developer with over \textbf{2 year of experience} in \textbf{HTML, CSS, Javascript}. I have knowledge of popular frameworks such as \textbf{React, and Vue.js} and experience with REST APIs.
 }
 %--------------------------------------------
 
@@ -189,13 +182,12 @@
 
 \section{Technical Skills}
   \resumeHeadingListStart{}
-    \resumeSectionType{Languages}{:}{PHP, SQL, Javascript, HTML, CSS, SCSS, TeX}
+    \resumeSectionType{Languages}{:}{Javascript, HTML, CSS, SCSS}
     \resumeSectionType{Frameworks}{:}{React.js}
-    \resumeSectionType{Libraries}{:}{PHPUnit, PHP Spread Sheet, ECDSA, React Router, Styled Components, Socket.IO}
-    \resumeSectionType{Databases}{:}{MySQL, MariaDB, SQLlite}
+    \resumeSectionType{Libraries}{:}{React Router, Styled Components, Socket.IO}
     \resumeSectionType{Methodoligies}{:}{BEM}
-    \resumeSectionType{Concepts}{:}{OOP, Regular Expressions, Accessibility (WCAG), REST, ERD Design, SRS Design}
-    \resumeSectionType{Dev Tools}{:}{Vim, Visual Studio Code, XDebug, Node, npm, Vite, Git, Github, Apache HTTP Server, Linux, cron, Docker, Insomnia}
+    \import{includes/technical-skills/}{concepts}
+    \import{includes/technical-skills/}{tools}
   \resumeHeadingListEnd{}
 %--------------------------------------------
 
@@ -205,30 +197,9 @@
 
 \section{Experience}
 \resumeHeadingListStart{}
-  \resumeQuadHeading{Front End Developer Volunteer}{Jan 2023 -- Present}
-  {UCCD KSU}{Remote -- Kafrelsheikh, Kafrelsheikh, Egypt}
-    \resumeItemListStart{}
-      \resumeItem{Designed and developed dynamic and responsive student management website using \textbf{React.js}}
-      \resumeItem{Worked with \textbf{REST APIs} to retrieve and display data from backend}
-    \resumeItemListEnd{}
-
-  \resumeQuadHeading{Vice Head of Web Development Committee}{Sep 2022 -- Apr 2023}
-  {GDSC KSU}{Remote -- Kafrelsheikh, Kafrelsheikh, Egypt}
-    \resumeItemListStart{}
-      \resumeItem{Share knowledge and experience with my fellow members}
-      \resumeItem{Make sure the plan is suitable for members}
-      \resumeItem{Demonstrated critical topics in core \textbf{Front End} technologies, including \textbf{SEO}, and \textbf{Accessibility}, through number of sessions}
-    \resumeItemListEnd{}
-
-  \resumeQuadHeadingChild{Full Stack Developer}{Feb 2022 -- Present}
-  {Freelance}
-    \resumeItemListStart{}
-      \resumeItem{Design and development of websites using \textbf{HTML, CSS, and Javascript}}
-      \resumeItem{Desing and development of back-ends using \textbf{PHP, MYSQL/MariaDB}}
-      \resumeItem{Worked on REST APIs for medium-sized systems}
-      \resumeItem{Analysis of stakeholders reuirements, and design \textbf{ERD}, \textbf{SRS}, and various documents}
-      \resumeItem{Deployed and maintained websites on \textbf{AWS EC2} linux server}
-    \resumeItemListEnd{}
+  \import{includes/experience/}{frontend-uccd}
+  \import{includes/experience/}{vice-head-GDSC}
+  \import{includes/experience/}{frontend-freelance}
 \resumeHeadingListEnd{}
 %---------------------------------------------
 
@@ -238,9 +209,7 @@
 
 \section{Education}
   \resumeHeadingListStart{}
-    \resumeQuadHeading{University of Kafrelsheikh -- Faculty of Computers and Information}{Kafrelsheikh, Kafrelsheikh, Egypt}
-    {Bachelor of Science in Computer Science}{Sep 2020 -- Jul 2024}
-    {GPA: 3.25/4}
+    \import{includes/education}{BSc-computer-science}
   \resumeHeadingListEnd{}
 %---------------------------------------------
 
@@ -257,53 +226,10 @@
     %     \resumeItem{Utilized \textbf{responsive design} to ensure compatibility across all devices}
     %     \resumeItem{Deployed on GitHub pages via GitHub Actions}
     %   \resumeItemListEnd{}
-    \resumeTrioHeading{\href{https://mohammed4mach.github.io/visual-sort-alg}{\uline{Visualizing Sorting Algorithms}}}{HTML, CSS, Javascript}{\href{https://github.com/Mohammed4mach/visual-sort-alg}{\uline{Source Code}}}
-      \resumeItemListStart{}
-        \resumeItem{Implemented different sorting algorithms in \textbf{Javascript}}
-        \resumeItem{Used \textbf{Asynchronous Programming} using \textbf{Javascript} to visualize sorting}
-        \resumeItem{Deployed on GitHub pages via GitHub Actions}
-      \resumeItemListEnd{}
-
-    \resumeTrioHeading{UCCD Website}{React.js, Git}{Private}
-      \resumeItemListStart{}
-        \resumeItem{Designed and developed a clean and modern website using \textbf{HTML, CSS, and Javascript}}
-        \resumeItem{Utilized \textbf{responsive design} to ensure compatibility across all devices}
-        \resumeItem{Communicated with backend using a \textbf{RESTful API}}
-      \resumeItemListEnd{}
-
-    \resumeTrioHeading{\href{https://mohammed4mach.github.io/Monopoly-game/}{\uline{Monopoly Game}}}{HTML, CSS, SCSS, Javascript}{\href{https://github.com/Mohammed4mach/Monopoly-game}{\uline{Source Code}}}
-      \resumeItemListStart{}
-        \resumeItem{Used \textbf{ECMA Modules} to reduce coupling}
-        \resumeItem{Worked with \textbf{CSS Grid and Flexbox} to simplify complex design}
-        \resumeItem{Deployed on GitHub pages via GitHub Actions}
-      \resumeItemListEnd{}
-
-    \resumeTrioHeading{\href{https://salem-clinic.com}{\uline{Salem Clinic Website}}}{PHP, MySQL, Javascript, Git}{Private}
-      \resumeItemListStart{}
-        \resumeItem{Designed and developed dynamic monolith website using \textbf{PHP, HTML, CSS, and JavaScript}}
-        \resumeItem{Worked on admin panel providing article management, content management, and admins priviliges}
-        \resumeItem{Developed Markup to HTML library using \textbf{PHP, and Javascript}, utilized in articles creation, editing, and viewing}
-        \resumeItem{Deployed using \textbf{Apache} server on \textbf{AWS EC2} instance, with domain name and \textbf{HTTPS} certificate configured}
-        \resumeItem{Used a \textbf{cronjob} to backup data periodically}
-        % \resumeItem{A \textbf{CRUD application} exposed using a RESTful API made with Node.js}
-        % \resumeItem{Exposed POST, GET, PATCH and DELETE HTTP methods using \textbf{Express}}
-      \resumeItemListEnd{}
-
-    \resumeTrioHeading{Simple API Framework}{PHP}{\href{https://github.com/Mohammed4mach/simple-api-framework}{\uline{Source Code}}}
-      \resumeItemListStart{}
-        \resumeItem{Developed various utilities to facilitate \textbf{RESTful APIs} developing}
-        \resumeItem{Implemented my own \textbf{Router, and JWT} utilities}
-      \resumeItemListEnd{}
-
-    \resumeTrioHeading{Clinic Management System / ERP System}{PHP, MariaDB, Socket.IO}{Private}
-      \resumeItemListStart{}
-        \resumeItem{A \textbf{CRUD application} exposed using a RESTful API made with PHP}
-        \resumeItem{Analysed stakeholders requirements, deigned \textbf{ERD} based on this analysis}
-        \resumeItem{Used \textbf{XDebug} to facilitate debugging process, and \textbf{PHPUnit} to automate unit testing}
-        \resumeItem{Worked on many features that support bussiness logic, includes live queues, activity log, authorization rules and priviliges, payroll system, patient management system, etc\ldots}
-        \resumeItem{Used \textbf{Socket.IO} under \textbf{Node.js} to build socket server to maintain live queues data between clients}
-        % \resumeItem{Exposed POST, GET, PATCH and DELETE HTTP methods using \textbf{Express}}
-      \resumeItemListEnd{}
+    \import{includes/projects/}{visualizing-sorting-algorithms}
+    \import{includes/projects/}{UCCD-website}
+    \import{includes/projects/}{bookopia}
+    % \import{includes/projects/}{monopoly-game}
   \resumeHeadingListEnd{}
 %--------------------------------------------
 
