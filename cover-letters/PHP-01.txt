@@ -1,0 +1,20 @@
+Hi Recruiter,
+
+I am Mohammed from Alexandria, Egypt, a 23-year-old full-stack developer and a computer science student.
+When I read the job description and requirements, I felt that this job fits my experiences and skills.
+
+Here are some points that demonstrate my thoughts:
+- I studied SDLC in more than one course in the faculty and reviewed famous practices in software development such as Waterfall, Agile, TDD, Pair Programming, etc...
+- I have experience in requirements gathering and analysis, and reflecting them on the technical side properly.
+- I have experience in the analysis and the designing using UML and the standard documents. Experiences include SRS Documents, Class Diagrams, Use Case Diagrams, ERD, etc...
+- I have experience working with relational databases such as MySql / MariaDB DBMS.
+- I have experience writing unit tests and integration tests for API software.
+- I have experience with Native PHP and PHP/Laravel, strong proficiency in MySQL / MariaDB DBMS, and experience with the differences between them.
+- I used HTML, CSS, and Javascript for more than 2 years in different types of projects, and a few months using ReactJS. Also, I am interested in Accessibility (WCAG) and SEO, and their impact on people and industry.
+- I have a brief experience with design patterns. I have a good understanding of the following patterns: Observer, Factory, Facade, Command, Singleton, and Adapter patterns, as well as the MVC architectural pattern. I am eager to learn more.
+- I have experience in designing and implementing RESTful APIs and a brief knowledge of other architectural styles.
+
+Finally, I hope those points will be sufficient to bring me to the next step in the hiring process.
+
+Sincerely,
+Mohammed Abdulsalam Aref
