@@ -1,7 +1,7 @@
 OUTDIR=./out
 BUILD_OPTIONS=-output-directory=$(OUTDIR)
 
-INCLUDE_FRONT=false
+INCLUDE_FRONT=true
 INCLUDE_BACK=true
 INCLUDE_FULLSTACK=true
 
