@@ -32,4 +32,3 @@ backend:
 
 clean_aux:
 	find $(OUTDIR) -type f  ! -name "*.pdf"  -delete
-
